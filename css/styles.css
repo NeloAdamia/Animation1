@@ -1,0 +1,45 @@
+
+
+.sky
+{
+    width: 100%;
+    position: relative;
+}
+
+.rainbow{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 200px;
+    animation:rainbow 20s ease-in-out infinite;
+}
+.rainbow2{
+    top:65%;
+    left:0;
+    position: absolute;
+    width:200px;
+    animation:rainbow2 20s ease-in-out infinite;
+}
+.airplane
+{
+    position:absolute;
+    top:20%;
+    left:70px;
+    width: 300px;
+    animation:airplane 30s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {right:0;}
+    100%{left:900px;}   
+}
+
+@keyframes rainbow2 {
+    0% {right:0;}
+    100% {left:900px;}
+}
+
+@keyframes airplane {
+    0% {top:20%; left:70%;}
+    100% {top:20%; left:0;}
+}
